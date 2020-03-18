@@ -40,3 +40,11 @@ btn[1].addEventListener('mouseover', _ => {
 btn[2].addEventListener('mouseover', _ => {
   btn[2].style.backgroundColor = `rgb(${Math.random() * 255},${Math.random() * 255},${Math.random() * 255})`;
 });
+
+//Text appears when double clicking on paragraph
+
+const allPara = document.querySelectorAll('p');
+
+allPara[1].addEventListener('dblclick', e => {
+  allPara[1].textContent += ' OUCH! STOP POKING ME '
+});
