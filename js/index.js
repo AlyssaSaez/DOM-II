@@ -98,3 +98,11 @@ function changeColor() {
   this.style.backgroundColor = "teal";
   return false;
 }
+
+const nava = document.querySelector("a");
+
+
+//Home button on click
+nava.addEventListener('click', e => {
+  alert(`Show me what you got!`)
+});
