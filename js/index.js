@@ -52,3 +52,20 @@ allPara[1].addEventListener('dblclick', e => {
 //Mock Sign up
 const button = document.querySelectorAll('.btn');
 button.forEach(node => { node.addEventListener('dblclick', function () { let name = prompt('Enter your name'); let email = prompt('Enter your email'); alert(`Thank you for signing up, ${name}! We will be contacting you shortly.`); }) });
+
+// Transform bottom button text after mousing out
+
+btn[0].addEventListener('mouseout', _ => {
+    btn[0].textContent = 'Baby come back';
+  });
+  
+  
+  btn[1].addEventListener('mouseout', _ => {
+    btn[1].textContent = 'you can blame it';
+  });
+  
+  
+  btn[2].addEventListener('mouseout', _ => {
+    btn[2].textContent = 'all on me';
+  });
+  
