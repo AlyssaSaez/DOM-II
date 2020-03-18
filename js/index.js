@@ -17,28 +17,28 @@ window.addEventListener('wheel', e => {
 
 const navItems = document.querySelectorAll('a');
 navItems.forEach(item => {
-  item.addEventListener('mousemove', _ => {
-    item.style.color = `rgb(${Math.random() * 255},${Math.random() * 255},${Math.random() * 255})`;
-  });
+    item.addEventListener('mousemove', _ => {
+        item.style.color = `rgb(${Math.random() * 255},${Math.random() * 255},${Math.random() * 255})`;
+    });
 
-  item.addEventListener('click', e => {
-    e.preventDefault();
-  });
+    item.addEventListener('click', e => {
+        e.preventDefault();
+    });
 });
 
 //Random colors on Sign Me Up Buttons
 
 const btn = document.querySelectorAll('.btn');
 btn[0].addEventListener('mouseover', _ => {
-  btn[0].style.backgroundColor = `rgb(${Math.random() * 255},${Math.random() * 255},${Math.random() * 255})`;
+    btn[0].style.backgroundColor = `rgb(${Math.random() * 255},${Math.random() * 255},${Math.random() * 255})`;
 });
 
 btn[1].addEventListener('mouseover', _ => {
-  btn[1].style.backgroundColor = `rgb(${Math.random() * 255},${Math.random() * 255},${Math.random() * 255})`;
+    btn[1].style.backgroundColor = `rgb(${Math.random() * 255},${Math.random() * 255},${Math.random() * 255})`;
 });
 
 btn[2].addEventListener('mouseover', _ => {
-  btn[2].style.backgroundColor = `rgb(${Math.random() * 255},${Math.random() * 255},${Math.random() * 255})`;
+    btn[2].style.backgroundColor = `rgb(${Math.random() * 255},${Math.random() * 255},${Math.random() * 255})`;
 });
 
 //Text appears when double clicking on paragraph
@@ -46,5 +46,9 @@ btn[2].addEventListener('mouseover', _ => {
 const allPara = document.querySelectorAll('p');
 
 allPara[1].addEventListener('dblclick', e => {
-  allPara[1].textContent += ' OUCH! STOP POKING ME '
+    allPara[1].textContent += ' OUCH! STOP POKING ME '
 });
+
+//Mock Sign up
+const button = document.querySelectorAll('.btn');
+button.forEach(node => { node.addEventListener('dblclick', function () { let name = prompt('Enter your name'); let email = prompt('Enter your email'); alert(`Thank you for signing up, ${name}! We will be contacting you shortly.`); }) });
