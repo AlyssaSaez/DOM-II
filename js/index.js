@@ -69,3 +69,15 @@ btn[0].addEventListener('mouseout', _ => {
     btn[2].textContent = 'all on me';
   });
   
+//Transforms H2 text when copied
+
+const copyTitle = document.querySelector('h2');
+copyTitle.addEventListener('copy', _ => {
+  copyTitle.textContent = 'Y U DO DIS'
+});
+
+// Pop up alert when page loads
+
+window.addEventListener('load', e => {
+    alert(`You shall not pass!`)
+  });
